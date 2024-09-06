@@ -1,5 +1,9 @@
 import tkinter as tk
+
 from src.widgets.tablet_connection_status import TabletConnectionStatus
+from src.widgets.tablet_press_diagram import TabletPressDiagram
+from src.widgets.tablet_panel_draw import TabletPanelDraw
+
 from src.conect_usb import Observer
 
 
@@ -14,9 +18,18 @@ class App(tk.Tk):
         #widgets
         self.tcs = TabletConnectionStatus(root=self)
         self.status_tablet : bool = False
+        self.tpd = TabletPressDiagram(root=self)
+        self.tpdd = TabletPanelDraw(root=self)
 
     def run(self):
-        
+        self.tcs.show()
+        self.tcs.logic(status= self.status_tablet)
+
+        self.tpd.create_cuadricule(self.tpd.canva,20)
+        self.tpd.show()
+
+        self.tpdd.show() #ya se ejecuta uwu
+
         self.mainloop()
 
     def event(self):
