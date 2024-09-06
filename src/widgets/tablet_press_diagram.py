@@ -18,7 +18,7 @@ class TabletPressDiagram(Widget):
         #canvas.create_rectangle(1,1, width-1, height-1, outline="lightgray", width=2)
 
     def show(self):
-        self.canva.pack(pady=10)
+        self.canva.pack(side='left', expand=False)
 
     def logic(self, coor_line : int = 0):
         pass

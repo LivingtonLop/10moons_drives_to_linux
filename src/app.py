@@ -8,7 +8,7 @@ from src.conect_usb import Observer
 
 
 class App(tk.Tk):
-    def __init__(self,screenname : str,sizey : int = 500, sizex:int = 500):
+    def __init__(self,screenname : str,sizey : int = 500, sizex:int = 1000):
         super().__init__()
 
         self.title(screenname)
