@@ -1,0 +1,7 @@
+APP_NAME = "10MOONS CONFIG"
+
+PATH_ICO = ""
+
+
+VERSION = 1.0
+DESCRIPTION= "Esta aplicacion de escritorio, es para poder usar la tableta de la marca china 10moons, ya que sus drivers no estan para linux"
